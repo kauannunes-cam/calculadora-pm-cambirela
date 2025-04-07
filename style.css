@@ -9,3 +9,7 @@ div.stNumberInput > div > div > input {
     background-color: #7cb9f2; /* Sua cor primária */
     color: #050835; /* Sua cor secundária para o texto */
 }
+
+input[type="radio"] {
+    accent-color: #050835; /* VERDE_DETALHES */
+}
