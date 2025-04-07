@@ -1,11 +1,11 @@
 /* style.css */
 input[type="number"] {
-    color: #49E2B1; /* Sua cor primária */
+    color: #7cb9f2; /* Sua cor primária */
 }
 
 /* Customizando widgets do Streamlit especificamente */
 /* Você pode precisar inspecionar a página para encontrar os seletores corretos */
 div.stNumberInput > div > div > input {
-    background-color: #49E2B1; /* Sua cor primária */
-    color: #1F4741; /* Sua cor secundária para o texto */
+    background-color: #7cb9f2; /* Sua cor primária */
+    color: #050835; /* Sua cor secundária para o texto */
 }
