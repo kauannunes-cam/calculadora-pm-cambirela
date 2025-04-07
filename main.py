@@ -13,7 +13,7 @@ def add_custom_css():
         <style>
             /* Altera a cor do texto de toda a página */
             body, h1, h2, h3, h4, h5, h6, p, div, label, input, button, table {
-                color: #050835; /* Cor secundária para texto */
+                color: #2d63b2; /* Cor secundária para texto */
             }
 
         </style>
