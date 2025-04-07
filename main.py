@@ -112,3 +112,8 @@ with col1:
     st.metric(label="Preço Médio", value=f"R$ {preco_medio:,.2f}")
 with col2:
     st.metric(label="Quantidade de Lotes em Aberto", value=f"{quantidade_lotes_em_aberto}")
+
+
+# Rodapé
+st.markdown("---")
+st.markdown("**Desenvolvido por Kauan Nunes - Trader QUANT**")
