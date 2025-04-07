@@ -13,11 +13,27 @@ def add_custom_css():
         <style>
             /* Altera a cor do texto de toda a página */
             body, h1, h2, h3, h4, h5, h6, p, div, label, input, button, table {
-                color: #2d63b2; /* Cor secundária para texto */
+                color: #2d63b2;
             }
 
+            /* Estiliza o círculo dos radio buttons */
+            input[type="radio"] {
+                accent-color: #2d63b2;
+            }
+
+            /* Estiliza o texto ao lado dos radios */
+            label[data-baseweb="radio"] p {
+                color: #2d63b2;
+                font-weight: bold;
+            }
+
+            /* Deixa o cursor tipo "mão" ao passar pelos radios */
+            label[data-baseweb="radio"] {
+                cursor: pointer;
+            }
         </style>
     """, unsafe_allow_html=True)
+
 
 # Adiciona o CSS personalizado ao app
 add_custom_css()
