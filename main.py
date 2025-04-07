@@ -11,28 +11,34 @@ local_css("style.css")
 def add_custom_css():
     st.markdown("""
         <style>
-            /* Altera a cor do texto de toda a página */
+            /* Texto geral */
             body, h1, h2, h3, h4, h5, h6, p, div, label, input, button, table {
                 color: #2d63b2;
             }
 
-            /* Estiliza o círculo dos radio buttons */
+            /* Força o estilo do input radio */
             input[type="radio"] {
-                accent-color: #2d63b2;
+                accent-color: #2d63b2 !important;
             }
 
-            /* Estiliza o texto ao lado dos radios */
-            label[data-baseweb="radio"] p {
-                color: #2d63b2;
+            /* Altera a cor da bolinha e do texto "Compra", "Venda" */
+            [data-baseweb="radio"] div[role="radiogroup"] label p {
+                color: #2d63b2 !important;
                 font-weight: bold;
             }
 
-            /* Deixa o cursor tipo "mão" ao passar pelos radios */
+            /* Opcional: remove estilos herdados de algum CSS anterior */
+            label[data-baseweb="radio"] {
+                background: transparent !important;
+            }
+
+            /* Deixa cursor tipo mão */
             label[data-baseweb="radio"] {
                 cursor: pointer;
             }
         </style>
     """, unsafe_allow_html=True)
+
 
 
 # Adiciona o CSS personalizado ao app
